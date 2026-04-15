@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVLS | Mateo Vandamme Light and Sound</title>
+    <style>
+        /* Kleurenpalet & Basis */
+        :root {
+            --primary-orange: #ff6600;
+            --deep-black: #0a0a0a;
+            --light-grey: #f4f4f4;
+            --text-white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--deep-black);
+            color: var(--text-white);
+            line-height: 1.6;
+        }
+
+        /* Navigatie */
+        header {
+            background-color: #000;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--primary-orange);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-orange);
+            text-decoration: none;
+        }
+
+        nav a {
+            color: var(--text-white);
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-orange);
+        }
+
+        /* Hero Sectie */
+        .hero {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070') no-repeat center/cover;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+
+        .btn-cta {
+            background-color: var(--primary-orange);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: transform 0.2s;
+        }
+
+        .btn-cta:hover {
+            transform: scale(1.05);
+        }
+
+        /* Content Secties */
+        section {
+            padding: 60px 5%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 20px;
+            text-align: center;
+            transition: border 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--primary-orange);
+        }
+
+        /* Footer (Belangrijk voor de wetgeving) */
+        footer {
+            background-color: #000;
+            padding: 40px 5% 20px;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+            color: #bbb;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #222;
+            padding-top: 20px;
+        }
+
+        .footer h4 {
+            color: var(--primary-orange);
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">MVLS</a>
+        <nav>
+            <a href="#materiaal">Materiaal</a>
+            <a href="#over-mij">Over MVLS</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Mateo Vandamme Light and Sound</h1>
+        <p>Professionele licht- en geluidsverhuur voor evenementen op maat.</p>
+        <a href="#materiaal" class="btn-cta">Ontdek ons aanbod</a>
+    </section>
+
+    <section id="materiaal">
+        <h2
+            style="color: var(--primary-orange); border-bottom: 2px solid var(--primary-orange); display: inline-block; padding-bottom: 5px;">
+            Ons Aanbod</h2>
+
+        <div class="category">
+            <h3>Licht</h3>
+            <div class="grid">
+                <div class="card">
+                    <img src="Ayra ERO 706.webp" alt="Ayra ERO 706">
+                    <h4>Ayra ERO 706</h4>
+                    <p>RGBAW + UV LED Movinghead</p>
+                    <span>Stock: 7</span>
+                </div>
+                <div class="card">
+                    <img src="Ayra Vision 180 Beam.webp" alt="Ayra Vision 180">
+                    <h4>Ayra Vision 180 Beam</h4>
+                    <p>Krachtige LED Movinghead</p>
+                    <span>Stock: 4</span>
+                </div>
+                <div class="card">
+                    <img src="Laserworld_EL-400RGBS.webp" alt="Laserworld EL-400RGB">
+                    <h4>Laserworld EL-400RGB S</h4>
+                    <p>Full color RGB Laser</p>
+                    <span>Stock: 2</span>
+                </div>
+                <div class="card">
+                    <img src="ayra compar 20.webp" alt="Ayra Compar 20" sizes="(max-width: 600px) 450, 450px"
+                        alt="Klant product">
+                    <h4>Ayra Compar 20</h4>
+                    <p>RGB Led spots</p>
+                    <span>Stock: 8</span>
+                </div>
+                <div class="card">
+                    <img src="PAR64.webp" alt="Par 64">
+                    <h4>Par 64 Profielspots</h4>
+                    <p>Klassieke krachtige spots</p>
+                    <span>Stock: 16</span>
+                </div>
+                <div class="card">
+                    <img src="Blacklight.webp" alt="Blacklight">
+                    <h4>Blacklight</h4>
+                    <p>UV TL-armaturen</p>
+                    <span>Stock: 2</span>
+                </div>
+                <div class="card">
+                    <img src="DMX Decoder.webp" alt="DMX Decoder">
+                    <h4>Ledstrip + decoder</h4>
+                    <p></p>
+                    <span>Stock: 1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>Geluid</h3>
+            <div class="grid">
+
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+            /* Zorgt dat de foto de hoeken volgt */
+            padding-bottom: 20px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-orange);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            /* Verander 'cover' naar 'contain' */
+            object-fit: contain;
+
+            /* Optioneel: voeg wat padding toe zodat de foto de randjes niet raakt */
+            padding: 10px;
+            box-sizing: border-box;
+
+            border-bottom: 2px solid var(--primary-orange);
+            background-color: #222;
+            /* De donkere achtergrond vult nu de lege ruimte op */
+        }
+
+        .card h4 {
+            margin: 15px 15px 5px;
+            color: var(--primary-orange);
+        }
+
+        .card p {
+            margin: 0 15px 15px;
+            font-size: 0.9rem;
+            color: #bbb;
+        }
+
+        .card span {
+            margin-left: 15px;
+            font-size: 0.8rem;
+            background: #222;
+            padding: 4px 10px;
+            border-radius: 4px;
+            border: 1px solid #444;
+        }
+    </style>
+
+    <section id="contact" style="background-color: #111;">
+        <h2>Vraag een offerte aan</h2>
+        <p>Aangezien elk event uniek is, werken wij met prijzen op maat. Contacteer ons met je wensen!</p>
+        <a href="mailto:info@mvls.be" class="btn-cta">E-mail Mateo</a>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h4>MVLS</h4>
+                <p>Mateo Vandamme Light and Sound<br>
+                    Uw partner in professionele event-technieken.</p>
+            </div>
+            <div>
+                <h4>Contactgegevens</h4>
+                <ul>
+                    <li>Straatnaam 123</li>
+                    <li>8000 Brugge, België</li>
+                    <li>Tel: +32 470 00 00 00</li>
+                    <li>E-mail: info@mvls.be</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Juridische Info</h4>
+                <ul>
+                    <li>BTW BE 0XXX.XXX.XXX</li>
+                    <li>RPR [Stad van rechtbank]</li>
+                    <li><a href="#" style="color: #bbb;">Privacybeleid</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 MVLS. Alle rechten voorbehouden.
+        </div>
+    </footer>
+
+</body>
+
+</html>
